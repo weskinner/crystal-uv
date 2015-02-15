@@ -10,7 +10,7 @@ lib UV
     UV_RUN_NOWAIT
   end
 
-  fun uv_loop_init(loop : UvLoopT*) : Int32
-  fun uv_loop_close(loop : UvLoopT*) : Int32
-  fun uv_run(loop : UvLoopT*, mode : UvRunMode) : Int32
+  fun loop_init = uv_loop_init(loop : UvLoopT*) : Int32
+  fun loop_close = uv_loop_close(loop : UvLoopT*) : Int32
+  fun run = uv_run(loop : UvLoopT*, mode : UvRunMode) : Int32
 end
